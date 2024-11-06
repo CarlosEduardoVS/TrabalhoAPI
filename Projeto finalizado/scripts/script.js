@@ -302,12 +302,13 @@ function stats(){
 // Detectar e executar funções específicas de página ao carregar
 document.addEventListener("DOMContentLoaded", () => {
     let currentPath = window.location.pathname;
-    if (currentPath.includes("historico.html")) {
+    if (currentPath.includes("index.html")) {
+        updatePlayers();
+        freeWeekRotation();
+    } else if (currentPath.includes("historico.html")) {
         stats()
         historicoJogador();
     } else if (currentPath.includes("champions.html")){
         nameChampions();
     }
-    updatePlayers();
-    freeWeekRotation();
 });
