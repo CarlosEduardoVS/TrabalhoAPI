@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div>
+            <a href="home.html" class="link-img"><img class="img-logo" src="imgs/logo.webp" alt="Logo"></a>
+        </div>
+    
+        <input type="checkbox" id="menu-toggle" class="input-nav">
+        <label for="menu-toggle" class="menu">
+            <span class="hamburguer"></span>
+        </label>
+    
+        <ul class="menu-navbar">
+            <li><a href="home.html" class="home">Home</a></li>
+            <li><a href="champions.html" class="champions">Champions</a></li>
+            <li><a href="historico.html" >Histórico</a></li>
+        </ul>
+    </header>
+
+
+
+
+    <!-- BARRA DE PESQUISA -->
+    <div class="container-search-box">
+        <form class="search-bar">
+            <div class="container-input">
+                <label for="user" class="search-pesquisa">Pesquisar</label>
+                <input type="text" placeholder="Nome do Jogador + #Tag" name="search" class="search-input" id="user">
+            </div>
+            <button type="submit" class="search-button" onclick="pesquisarJogador(event)">.GG</button>
+        </form>
+    </div>
+
+
+    
+
+
+
+
+    <!-- TABELAS -->
+    <div class="container-info">
+
+        <div class="container-info-vitorias">
+
+            <div class="elo-jogador">
+                <h3>Jogadores com mais elo Solo Duo</h3>
+                <table class="table-top-players-solo-duo">
+                </table>
+            </div>
+
+            <div class="vitoria-campeao">
+                <h3>Jogadores com mais elo Flex</h3>
+                <table class="table-top-players-flex">
+                </table>
+            </div>
+
+        </div>
+    
+        <div class="rotacao-semanal-gratis">
+            <h3>Rotação Gratis Semanal</h3>
+            <table class="table-champs-popular">
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>Sobre Nós</h3>
+            <p>Somos uma empresa focada em desenvolvimento web, oferecendo soluções modernas e inovadoras.</p>
+        </div>
+
+        <div class="footer-center">
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="home.html" class="home">Home</a></li>
+                <li><a href="champions.html" class="champions">Champions</a></li>
+                <li><a href="historico.html" >Histórico</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <h3>Contato</h3>
+            <p>Email: contato@exemplo.com</p>
+            <p>Telefone: (11) 9999-9999</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Todos os direitos reservados | Desenvolvido por Eduardo Victor e Carlos Eduardo</p>
+    </div>
+</footer>
+
+
+<script src="scripts/script.js"></script>
+
+    
+</body>
+</html>
