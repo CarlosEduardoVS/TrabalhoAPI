@@ -36,7 +36,7 @@ function fetchSummonerName(summonerId, playerColuna, flex) {
 
 // Busca nome e tag do jogador pelo PUUID e atualiza a célula
 function fetchGameNickPuuid(puuid, playerColuna, flex) {
-    fetch(`/api/riotProxy?endpoint=riot/account/v1/accounts/by-puuid/${puuid}`)
+    fetch(`https://americas.api.riotgames.com/riot/account/v1/accounts/by-puuid/${puuid}?api_key=${API_KEY}`)
         .then(response => response.json())
         .then(data => {
             playerColuna.textContent = `${data.gameName}#${data.tagLine}`;
