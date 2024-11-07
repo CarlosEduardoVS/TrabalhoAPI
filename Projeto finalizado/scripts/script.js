@@ -1,4 +1,4 @@
-let API_KEY = "RGAPI-e26a2178-0de2-4229-8d3c-23c98f904842";
+let API_KEY = "RGAPI-dc4744e7-fc10-41f3-b1db-a4557dbc91af";
 
 // Atualiza as tabelas Solo-Duo e Flex
 function updateTable(obj, tableClass, flex = false) {
